@@ -205,7 +205,7 @@ const User = ({ user, trainings, close, open }) => {
                                         >
                                             {user.account_state ? 'Activate Account' : 'Suspend Account'}
                                         </Button>
-                                        <Button onClick={() => router.visit(`/admin/users/${user.id}`)}>View Full Profile</Button>
+                                        <Button onClick={() => window.open(`/admin/users/${user.id}`, '_blank')}>View Full Profile</Button>
                                     </div>
                                 </div>
                             </div>

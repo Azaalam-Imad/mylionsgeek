@@ -3,7 +3,7 @@ import { Head, router } from '@inertiajs/react';
 import { BookOpen, Timer, Trash2, TrendingUp, User, Sparkles, Award, Clock, Target, GraduationCap, X, CheckCircle2, Building2, Calendar } from 'lucide-react';
 import { useState } from 'react';
 import CreatTraining from './partials/CreatTraining';
-import { Avatar, } from '@/components/ui/avatar';
+import { Avatar,AvatarImage } from '@/components/ui/avatar';
 import { useInitials } from '@/hooks/use-initials';
 import UpdateTraining from './partials/UpdateTraining';
 import Banner from "@/components/banner"
@@ -553,11 +553,11 @@ export default function Training({ trainings, coaches, filters = {}, tracks = []
                                                 <h2 className="text-lg font-bold text-dark dark:text-light mb-4">
                                                     Trainings Statistics
                                                 </h2>
-                                                <div className="grid grid-cols-5 gap-6">
+                                                <div className="grid grid-cols-4 gap-6">
                                                     {[
                                                         { label: 'Students', value: totalStudents },
                                                         { label: 'Trainings', value: trainingsTotal },
-                                                        { label: 'Pending', value: pendingCount },
+                                                        // { label: 'Pending', value: pendingCount },
                                                         { label: 'Active', value: trainingsActiv },
                                                         { label: 'Done', value: completedCount },
                                                     ].map((stat, i) => (
